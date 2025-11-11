@@ -54,7 +54,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 }
 
 .carousel-item img {
-    height: 70vh;
+    height: 100vh;
     object-fit: cover;
 }
 
