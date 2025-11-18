@@ -20,7 +20,7 @@
   --gray: #6c757d;
   --gray-dark: #343a40;
   --primary: #194376;
-  --secondary: #46C6CE;
+  --secondary: rgb(49, 141, 145);
   --success: #28a745;
   --info: #17a2b8;
   --warning: #ffc107;
@@ -41,6 +41,46 @@
 *::after {
   box-sizing: border-box;
 }
+
+/* Modal Background */
+.modal-content {
+    background-color: #1E3A8A; /* dark blue */
+    border-radius: 15px;
+    color: white;
+    padding: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+
+
+/* Buttons */
+.modal-content .btn {
+    font-weight: bold;
+    border-radius: 8px;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+.modal-content .btn-primary {
+    background-color: #FFD700; /* yellow */
+    color: #1E3A8A; /* dark blue text */
+    border: none;
+}
+
+.modal-content .btn-primary:hover {
+    background-color: #FFC107;
+    color: #1E3A8A;
+}
+
+
+/* Form Inputs */
+.modal-content input {
+    border-radius: 8px;
+    border: none;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+
 
 html {
   font-family: sans-serif;
@@ -76,6 +116,7 @@ body {
   text-align: left;
   background-color: #fff;
 }
+
 .service-card {
     background: #fff;
     border-radius: 14px;
@@ -121,6 +162,8 @@ body {
 [tabindex="-1"]:focus:not(:focus-visible) {
   outline: 0 !important;
 }
+
+
 
 hr {
   box-sizing: content-box;
@@ -318,7 +361,9 @@ select {
 button,
 [type="button"],
 [type="reset"],
-[type="submit"] {
+[type="submit"] 
+{
+  appearance: button;   
   -webkit-appearance: button;
 }
 
@@ -384,6 +429,7 @@ progress {
 
 [type="search"] {
   outline-offset: -2px;
+  appearance: none;      
   -webkit-appearance: none;
 }
 
@@ -3538,7 +3584,7 @@ input[type="button"].btn-block {
   display: block;
   min-height: 1.5rem;
   padding-left: 1.5rem;
-  color-adjust: exact;
+  color: exact;
 }
 
 .custom-control-inline {
@@ -9625,3 +9671,8 @@ h6,
   padding: 0;
   list-style-type: none;
 }
+
+
+
+
+    
